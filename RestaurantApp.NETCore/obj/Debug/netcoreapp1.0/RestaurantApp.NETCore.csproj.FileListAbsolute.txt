@@ -1,0 +1,9 @@
+C:\Users\goran\Documents\GitHub\RestaurantApp.NETCore\RestaurantApp.NETCore\bin\Debug\netcoreapp1.0\RestaurantApp.NETCore.deps.json
+C:\Users\goran\Documents\GitHub\RestaurantApp.NETCore\RestaurantApp.NETCore\bin\Debug\netcoreapp1.0\RestaurantApp.NETCore.runtimeconfig.json
+C:\Users\goran\Documents\GitHub\RestaurantApp.NETCore\RestaurantApp.NETCore\bin\Debug\netcoreapp1.0\RestaurantApp.NETCore.runtimeconfig.dev.json
+C:\Users\goran\Documents\GitHub\RestaurantApp.NETCore\RestaurantApp.NETCore\bin\Debug\netcoreapp1.0\RestaurantApp.NETCore.dll
+C:\Users\goran\Documents\GitHub\RestaurantApp.NETCore\RestaurantApp.NETCore\bin\Debug\netcoreapp1.0\RestaurantApp.NETCore.pdb
+C:\Users\goran\Documents\GitHub\RestaurantApp.NETCore\RestaurantApp.NETCore\obj\Debug\netcoreapp1.0\RestaurantApp.NETCore.csprojResolveAssemblyReference.cache
+C:\Users\goran\Documents\GitHub\RestaurantApp.NETCore\RestaurantApp.NETCore\obj\Debug\netcoreapp1.0\RestaurantApp.NETCore.AssemblyInfo.cs
+C:\Users\goran\Documents\GitHub\RestaurantApp.NETCore\RestaurantApp.NETCore\obj\Debug\netcoreapp1.0\RestaurantApp.NETCore.dll
+C:\Users\goran\Documents\GitHub\RestaurantApp.NETCore\RestaurantApp.NETCore\obj\Debug\netcoreapp1.0\RestaurantApp.NETCore.pdb
