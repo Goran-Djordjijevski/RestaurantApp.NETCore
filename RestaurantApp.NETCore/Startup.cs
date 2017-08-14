@@ -29,8 +29,6 @@ namespace RestaurantApp.NETCore
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseRuntimeInfoPage();
-
             app.Run(async (context) =>
             {
                 await context.Response.WriteAsync("Hello World!");
