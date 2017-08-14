@@ -31,7 +31,7 @@ namespace RestaurantApp.NETCore
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseMvc(ConfigureRoute);
+            app.UseMvc(ConfigureRoutes);
 
             app.Run(async (context) =>
             {
@@ -39,7 +39,7 @@ namespace RestaurantApp.NETCore
             });
         }
 
-        private void ConfigureRoute(IRouteBuilder routeBuilder)
+        private void ConfigureRoutes(IRouteBuilder routeBuilder)
         {
             routeBuilder.MapRoute("Default",
                 "{controller=Home}/{action=Index}/{id?}");
