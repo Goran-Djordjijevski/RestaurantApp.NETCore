@@ -1,4 +1,4 @@
-﻿@model RestaurantApp.NETCore.Models.Restaurant
+﻿@model IEnumerable<RestaurantApp.NETCore.Models.Restaurant>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -6,6 +6,14 @@
 </head>
 <body>
     <h1>Welcome</h1>
-    <h3>@Model.Name</h3>
+    <table>
+        @foreach (var restaurant in Model)
+        {
+            <tr>
+                <td>@restaurant.Id</td>
+                <td>@restaurant.Name</td>
+            </tr>
+        }
+    </table>
 </body>
 </html>
