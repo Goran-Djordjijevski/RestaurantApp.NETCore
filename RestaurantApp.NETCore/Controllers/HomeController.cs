@@ -17,7 +17,7 @@ namespace RestaurantApp.NETCore.Controllers
                 Name = "Sabatino's"
             };
 
-            return new ObjectResult(model);
+            return View(model: model);
         }
     }
 }
