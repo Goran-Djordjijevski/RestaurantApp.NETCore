@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using RestaurantApp.NETCore.Models;
+using RestaurantApp.NETCore.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,7 +19,9 @@ namespace RestaurantApp.NETCore.Controllers
 
         public IActionResult Index()
         {
-            var model = _restaurantData.GetAll();
+            var model = new HomePageViewModel();
+            model.Restaurants = _restaurantData.GetAll();
+            model.CurrentGreeting = "Hello, from configurable file";
 
             return View(model: model);
         }
