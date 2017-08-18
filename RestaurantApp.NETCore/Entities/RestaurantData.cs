@@ -9,6 +9,7 @@ namespace RestaurantApp.NETCore.Models
     public interface IRestaurantData
     {
         IEnumerable<Restaurant> GetAll();
+        Restaurant Get(int id);
     }
 
     public class InMemoryRestaurantData : IRestaurantData
@@ -23,6 +24,11 @@ namespace RestaurantApp.NETCore.Models
                 new Restaurant { Id = 2, Name = "LJ's and the Kat" },
                 new Restaurant { Id = 3, Name = "King's Contrivance" },
             };
+        }
+
+        public Restaurant Get(int id)
+        {
+            return _restaurants.FirstOrDefault(r => r.Id == id);
         }
 
         public IEnumerable<Restaurant> GetAll()

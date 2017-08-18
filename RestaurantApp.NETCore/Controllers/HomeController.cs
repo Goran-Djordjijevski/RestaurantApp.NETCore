@@ -25,5 +25,17 @@ namespace RestaurantApp.NETCore.Controllers
 
             return View(model: model);
         }
+
+        public IActionResult Details(int id)
+        {
+            var model = _restaurantData.Get(id);
+
+            if (model == null)
+            {
+                return RedirectToAction("Index");
+            }
+
+            return View(model);
+        }
     }
 }

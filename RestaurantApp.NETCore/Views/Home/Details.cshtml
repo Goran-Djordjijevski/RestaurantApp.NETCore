@@ -1,0 +1,13 @@
+﻿@model RestaurantApp.NETCore.Entities.Restaurant
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>@Model.Name</title>
+</head>
+<body>
+    <h1>@Model.Name</h1>
+    <div>
+        @Html.ActionLink(linkText: "Home", actionName: "Index")
+    </div>
+</body>
+</html>
