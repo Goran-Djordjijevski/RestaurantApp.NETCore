@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "targets": {
     ".NETCoreApp,Version=v1.0": {
       "Libuv/1.9.1": {
@@ -9693,15 +9693,27 @@
   },
   "project": {
     "version": "1.0.0",
+    "restoreSettings": {
+      "hideWarningsAndErrors": true
+    },
     "restore": {
       "projectUniqueName": "C:\\Users\\goran\\Documents\\GitHub\\RestaurantApp.NETCore\\RestaurantApp.NETCore\\RestaurantApp.NETCore.csproj",
       "projectName": "RestaurantApp.NETCore",
       "projectPath": "C:\\Users\\goran\\Documents\\GitHub\\RestaurantApp.NETCore\\RestaurantApp.NETCore\\RestaurantApp.NETCore.csproj",
+      "packagesPath": "C:\\Users\\goran\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\goran\\Documents\\GitHub\\RestaurantApp.NETCore\\RestaurantApp.NETCore\\obj\\",
       "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\goran\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
       "originalTargetFrameworks": [
         "netcoreapp1.0"
       ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
       "frameworks": {
         "netcoreapp1.0": {
           "projectReferences": {}
