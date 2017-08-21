@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using RestaurantApp.NETCore.Entities;
 using RestaurantApp.NETCore.Models;
 using RestaurantApp.NETCore.ViewModels;
 using System;
@@ -38,8 +39,26 @@ namespace RestaurantApp.NETCore.Controllers
             return View(model);
         }
 
+        [HttpGet]
         public IActionResult Create()
         {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Create(RestaurantEditViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                var restaurant = new Restaurant();
+                restaurant.Name = model.Name;
+                restaurant.Cuisine = model.Cuisine;
+
+                _restaurantData.Add(restaurant);
+
+                return RedirectToAction("Details", new { id = restaurant.Id });
+            }
+
             return View();
         }
     }
