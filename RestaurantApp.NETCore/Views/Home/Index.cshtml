@@ -10,12 +10,17 @@
     {
         <tr>
             <td>
-                @Html.ActionLink(restaurant.Id.ToString(), "Details", new { id = restaurant.Id })
+                <a asp-action="Details" asp-route-id="@restaurant.Id">Details</a>
+                <a asp-action="Edit" asp-route-id="@restaurant.Id">Edit</a>
             </td>
             <td>@restaurant.Name</td>
         </tr>
     }
 </table>
+
+<h4>
+    <a asp-controller="Home" asp-action="Create">Create</a>
+</h4>
 
 @section footer {
     <div>
