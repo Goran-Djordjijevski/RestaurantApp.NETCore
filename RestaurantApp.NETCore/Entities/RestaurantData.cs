@@ -13,6 +13,32 @@ namespace RestaurantApp.NETCore.Models
         void Add(Restaurant newRestaurant);
     }
 
+    public class SqlRestaurantData : IRestaurantData
+    {
+        private RestaurantsDbContext _context;
+
+        public SqlRestaurantData(RestaurantsDbContext context)
+        {
+            _context = context;
+        }
+
+        public void Add(Restaurant newRestaurant)
+        {
+            _context.Add(newRestaurant);
+            _context.SaveChanges();
+        }
+
+        public Restaurant Get(int id)
+        {
+            return _context.Restaurants.FirstOrDefault(r => r.Id == id);
+        }
+
+        public IEnumerable<Restaurant> GetAll()
+        {
+            return _context.Restaurants.ToList();
+        }
+    }
+
     public class InMemoryRestaurantData : IRestaurantData
     {
         private static List<Restaurant> _restaurants;

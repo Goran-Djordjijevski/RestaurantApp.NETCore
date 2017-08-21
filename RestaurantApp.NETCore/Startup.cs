@@ -21,6 +21,8 @@ namespace RestaurantApp.NETCore
         {
             services.AddMvc();
 
+            services.AddEntityFrameworkSqlServer();
+
             services.AddScoped<IRestaurantData, InMemoryRestaurantData>();
         }
 
